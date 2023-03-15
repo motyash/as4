@@ -81,7 +81,9 @@ class AdminViewMeta(type):
         calculating them for each view class instance.
     """
     def __init__(cls, classname, bases, fields):
+        
         type.__init__(cls, classname, bases, fields)
+
 
         # Gather exposed views
         cls._urls = []
